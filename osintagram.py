@@ -12,7 +12,7 @@ with open("credentials.yaml", "r") as yamlfile:
 
 pc.printout("\nLogging in..\n\n", pc.YELLOW)
 cl = Client()
-
+        
 try:
     cl.login(data[0]['Credentials']['username'], data[0]['Credentials']['password'])
 except Exception as err:
@@ -31,7 +31,8 @@ while True:
     if user_input == '1':
         print(target_user_id)
     elif user_input == '2':
-        print(cl.user_medias(target_user_id, 10))
+        limit = input("Enter Number of Posts you want to retrieve:")
+        print(cl.user_medias(target_user_id, limit))
     elif user_input == '3':
         print(cl.user_info(target_user_id))
     elif user_input == '4':
@@ -46,8 +47,8 @@ while True:
         location = cl.location_search(lat, lng)[0]
         location.dict()
         location = cl.location_complete(location)
-
-        print(cl.location_medias_recent(location.pk, 2))
+        limit = input("Enter Number of Posts you want to retrieve:")
+        print(cl.location_medias_recent(location.pk, limit))
     elif user_input == '0':
         pc.printout("Exiting the program. Goodbye!", pc.CYAN)
         break  # Exit the loop
