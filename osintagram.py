@@ -25,7 +25,7 @@ pc.printout("\nTarget Id: "+target_user_id+"\n", pc.GREEN)
 
 while True:
     pc.printout("\nEnter a command:\n", pc.YELLOW)
-    user_input = input("1) Get User Id\n2) Get User Media\n3)Get User Information\n4)Search Followers\n5)Search Following\n6)Search Most Recent Media/Posts By Location")
+    user_input = input("1) Get User Id\n2) Get User Media\n3)Get User Information\n4)Search Followers\n5)Search Following\n6)Search Most Recent Media/Posts By Location\n0)Exit\n")
 
     # Check the user input and execute the corresponding command
     if user_input == '1':
