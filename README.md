@@ -7,7 +7,7 @@ ________    _________.___ ____________________________________    _____      ___
         \/        \/             \/               \/        \/         \/         \/
 ```
 
-OSINT tool to query instagram user and location information.
+Basic OSINT tool to query instagram user and location information.
 
 #### Features
 1. Get User Pk.
@@ -21,6 +21,7 @@ OSINT tool to query instagram user and location information.
 9. High Quality video download
 
 #### Usage
+You can only use this on people you follow or people that have public profiles, which shouldn't be hard to get someone to accept your follow request.
 Python >= 3.9
 1. ```pip3 install -r requirements.txt```
 2. Add your credentials to credentials.yaml
