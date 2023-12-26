@@ -16,6 +16,9 @@ OSINT tool to query instagram user and location information.
 4. Query User Following.
 5. Query User Followers.
 6. Query Location most recent posts.
+7. Get Media Information
+8. High Quality photo download
+9. High Quality video download
 
 #### Usage
 Python >= 3.9
