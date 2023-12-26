@@ -25,7 +25,7 @@ pc.printout("\nTarget Id: "+target_user_id+"\n", pc.GREEN)
 
 while True:
     pc.printout("\nEnter a command:\n", pc.YELLOW)
-    user_input = input("1) Get User Id\n2) Get User Media\n3) Get User Information\n4) Search Followers\n5) Search Following\n6) Search Most Recent Media/Posts By Location\n7) Get Media Information\n0) Exit\n")
+    user_input = input("1) Get User Id\n2) Get User Media\n3) Get User Information\n4) Search Followers\n5) Search Following\n6) Search Most Recent Media/Posts By Location\n7) Get Media Information\n8) High Quality Photo Download\n9) High Quality Video Download\n0) Exit\n")
 
     # Check the user input and execute the corresponding command
     if user_input == '1':
@@ -58,8 +58,20 @@ while True:
         media_pk = input("Enter Media Pk:\n")
         pc.printout("Retrieving Media Information..\n", pc.MAGENTA)
         print(cl.media_info(media_pk).dict())
+    elif user_input == '8':
+        photo_url = input("Enter Photo Url:\n")
+        photo_pk = cl.media_pk_from_url(photo_url)
+        url = cl.media_info(pk).photo_url
+        pc.printout("Retrieving Photo..\n", pc.MAGENTA)
+        print(url)
+    elif user_input == '9':
+        video_url = input("Enter Video Url:\n")
+        video_pk = cl.media_pk_from_url(video_url)
+        url = cl.media_info(video_pk).video_url
+        pc.printout("Retrieving Video..\n", pc.MAGENTA)
+        print(url)
     elif user_input == '0':
         pc.printout("Exiting the program. Goodbye!", pc.CYAN)
         break  # Exit the loop
     else:
-        print("Please enter a valid command.")
+        print("Invalid command. Please enter command 1, 2, or 3.")
