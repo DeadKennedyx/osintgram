@@ -1,7 +1,7 @@
 requests==2.31.0
 PySocks==1.7.1
-pydantic==2.5.3
+pydantic==1.10.9
 moviepy==1.0.3
 pycryptodomex==3.18.0
-instagrapi
+instagrapi==1.19.7
 pyyaml
