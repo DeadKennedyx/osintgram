@@ -28,4 +28,4 @@ You can only use this on people you follow or people that have public profiles, 
 Python >= 3.9
 1. ```pip3 install -r requirements.txt```
 2. Add your credentials to credentials.yaml
-3. ```python3 osintgram.py```
+3. ```python3 osintagram.py```
