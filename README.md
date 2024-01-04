@@ -11,6 +11,9 @@ Basic OSINT tool to query instagram user and location information.
 
 Based on the previous osintgram that doesn't work anymore.
 
+### Appreciation
+if you clone the repo don't forget to give a little star to the repo!
+
 #### Features
 1. Get User Pk.
 2. Get User Information.
